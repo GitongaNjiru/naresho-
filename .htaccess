@@ -1,14 +1,29 @@
-# Truehost cPanel — Proxy all traffic to Node.js app running on port 3000
-# This file is used when hosting on Shared Hosting with cPanel + Passenger
-
 Options -MultiViews
 RewriteEngine On
 
-# Don't rewrite requests for existing static files
+# Route API calls to PHP files
+RewriteRule ^api/login/?$              api/login.php [L,QSA]
+RewriteRule ^api/logout/?$             api/logout.php [L,QSA]
+RewriteRule ^api/auth-check/?$         api/auth_check.php [L,QSA]
+RewriteRule ^api/content/?(.*)$        api/content.php [L,QSA]
+RewriteRule ^api/admin/content/?(.*)$  api/content.php [L,QSA]
+RewriteRule ^api/admin/upload-logo/?$  api/upload.php?type=logo [L,QSA]
+RewriteRule ^api/admin/upload/?$       api/upload.php?type=image [L,QSA]
+RewriteRule ^api/admin/team/?(.*)$     api/team.php [L,QSA]
+RewriteRule ^api/team/?(.*)$           api/team.php [L,QSA]
+RewriteRule ^api/admin/blog/?(.*)$     api/blog.php [L,QSA]
+RewriteRule ^api/blog/?(.*)$           api/blog.php [L,QSA]
+RewriteRule ^api/admin/gallery/?(.*)$  api/gallery.php [L,QSA]
+RewriteRule ^api/gallery/?(.*)$        api/gallery.php [L,QSA]
+RewriteRule ^api/admin/change-password/?$ api/change_password.php [L,QSA]
+
+# Serve blog and gallery as HTML pages
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blog/([0-9]+)$   article.html [L]
+RewriteRule ^blog/?$           blog.html [L]
+RewriteRule ^gallery/?$        gallery.html [L]
+RewriteRule ^admin/?$          admin/index.html [L]
 
-# Route everything to Node.js via Passenger (cPanel)
-# If using cPanel Node.js App Manager, Passenger handles this automatically
-# This fallback ensures all routes go to the app
-RewriteRule ^(.*)$ http://localhost:3000/$1 [P,L]
+# Pass REQUEST_URI to PHP scripts
+RewriteRule ^ - [E=REQUEST_URI:%{REQUEST_URI}]

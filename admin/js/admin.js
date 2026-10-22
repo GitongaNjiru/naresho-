@@ -655,7 +655,8 @@ async function updateTeamMember(id) {
   if (photo) formData.append('photo', photo);
 
   try {
-    const res = await fetch(`/api/admin/team/${id}`, { method: 'PUT', body: formData });
+    formData.append('_method', 'PUT');
+    const res = await fetch(`/api/admin/team/${id}`, { method: 'POST', body: formData });
     if (res.ok) {
       const data = await res.json();
       const idx = content.team.findIndex(m => m.id === id);
@@ -1036,7 +1037,8 @@ async function saveBlogPost(id) {
 
   try {
     const url = id ? `/api/admin/blog/${id}` : '/api/admin/blog';
-    const method = id ? 'PUT' : 'POST';
+    const method = 'POST';
+    if (id) formData.append('_method', 'PUT');
     const res = await fetch(url, { method, body: formData });
     if (res.ok) {
       document.querySelector('.modal-overlay').remove();
