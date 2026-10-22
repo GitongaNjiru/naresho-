@@ -1,0 +1,14 @@
+# Truehost cPanel — Proxy all traffic to Node.js app running on port 3000
+# This file is used when hosting on Shared Hosting with cPanel + Passenger
+
+Options -MultiViews
+RewriteEngine On
+
+# Don't rewrite requests for existing static files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route everything to Node.js via Passenger (cPanel)
+# If using cPanel Node.js App Manager, Passenger handles this automatically
+# This fallback ensures all routes go to the app
+RewriteRule ^(.*)$ http://localhost:3000/$1 [P,L]

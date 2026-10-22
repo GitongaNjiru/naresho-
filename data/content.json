@@ -1,0 +1,415 @@
+{
+  "site": {
+    "title": "Naresho Solar Ranches",
+    "logo": "logo.png"
+  },
+  "hero": {
+    "badge": "Republic of Kenya  |  Kajiado County",
+    "heading": "Kenya's Next Landmark Solar Energy Project",
+    "headingHighlight": "Landmark",
+    "subheading": "Naresho Solar Ranches is developing a 100 MW utility-scale solar photovoltaic plant in Naresho, Kajiado County — strategically positioned within Kenya's premier renewable energy corridor, with direct access to the national high-voltage grid.",
+    "btnPrimary": "View the Project",
+    "btnPrimaryLink": "#project",
+    "btnSecondary": "Investment Case",
+    "btnSecondaryLink": "#why",
+    "stats": [
+      {
+        "num": "100",
+        "unit": "MW",
+        "label": "Estimated Capacity"
+      },
+      {
+        "num": "800+",
+        "unit": "ac",
+        "label": "Land Secured"
+      },
+      {
+        "num": "400",
+        "unit": "kV",
+        "label": "KETRACO Grid Access"
+      },
+      {
+        "num": "6",
+        "unit": "",
+        "label": "Landowner Sponsors"
+      },
+      {
+        "num": "#1",
+        "unit": "",
+        "label": "Potential in Kenya"
+      }
+    ]
+  },
+  "opportunityBanner": {
+    "tag": "Significant Investment Opportunity",
+    "text": "Subject to pre-feasibility confirmation, this Project presents a compelling opportunity with the potential to become Kenya's largest solar plant — a landmark in East Africa's clean energy transition.",
+    "btnText": "Express Interest",
+    "btnLink": "#contact"
+  },
+  "about": {
+    "tag": "Who We Are",
+    "heading": "Built on Strong Foundations",
+    "paragraphs": [
+      "Naresho Solar Ranches is a duly incorporated Private Limited Company (Reg. No. PVT-J616JA05), registered under Kenya's Companies Act, 2015 on 14 September 2026.",
+      "We are a purpose-built vehicle to develop, finance, and operate a 100 MW solar PV plant that will feed into Kenya's national transmission network — delivering stable, clean, and competitively priced electricity at scale.",
+      "Headquartered at Victoria Towers, Westlands, Nairobi, our team combines deep local knowledge with international-grade advisory expertise across technical, financial, and legal disciplines."
+    ],
+    "certs": [
+      "Incorporated — Republic of Kenya",
+      "Reg. No. PVT-J616JA05",
+      "1,000 Ordinary Shares — KES 100 par value",
+      "Companies Act, 2015 compliant"
+    ],
+    "cards": [
+      {
+        "icon": "map-pin",
+        "title": "Project Location",
+        "text": "Naresho, Kajiado County — one of Kenya's highest solar irradiation zones, with strong and consistent resource profiles year-round."
+      },
+      {
+        "icon": "zap",
+        "title": "Grid-Connected Asset",
+        "text": "Immediate proximity to the 400 kV KETRACO transmission substation — Kenya's primary high-voltage national grid corridor."
+      },
+      {
+        "icon": "building-2",
+        "title": "Investor-Ready Structure",
+        "text": "Dedicated HoldCo governance, clean SPV structure, experienced advisory team — all designed for institutional capital participation."
+      },
+      {
+        "icon": "globe",
+        "title": "East Africa Impact",
+        "text": "100 MW of zero-emission solar power advancing Kenya's Vision 2030 energy goals and supporting the country's green growth agenda."
+      }
+    ]
+  },
+  "project": {
+    "tag": "The Project",
+    "heading": "100 MW Naresho Solar PV Plant",
+    "desc": "A utility-scale photovoltaic development positioned at the intersection of Kenya's best solar resource, strongest grid infrastructure, and most bankable land tenure arrangements.",
+    "facts": [
+      {
+        "icon": "sun",
+        "label": "Technology",
+        "value": "Utility-Scale Solar PV"
+      },
+      {
+        "icon": "battery-charging",
+        "label": "Capacity",
+        "value": "100 MW AC"
+      },
+      {
+        "icon": "map-pin",
+        "label": "Location",
+        "value": "Naresho, Kajiado County"
+      },
+      {
+        "icon": "land-plot",
+        "label": "Land Area",
+        "value": "~800 Acres"
+      },
+      {
+        "icon": "cable",
+        "label": "Grid Connection",
+        "value": "400 kV KETRACO"
+      },
+      {
+        "icon": "clipboard-list",
+        "label": "Stage",
+        "value": "Pre-Feasibility"
+      }
+    ],
+    "subHeading": "Project Overview",
+    "details": [
+      {
+        "icon": "map-pin",
+        "title": "Strategic Location",
+        "text": "Naresho, Kajiado County lies within one of Kenya's highest solar irradiation zones — delivering strong, consistent solar resource profiles that support competitive energy yield assumptions and long-term generation stability."
+      },
+      {
+        "icon": "cable",
+        "title": "Exceptional Grid Access",
+        "text": "The Project is in immediate proximity to a 400 kV KETRACO transmission substation forming part of Kenya's national grid. This substation serves major grid-connected assets including the Kipeto Wind Farm (majority shareholder: Meridiam) — placing Narresho within an established institutional-grade renewable energy corridor with direct access to high-voltage transmission infrastructure."
+      },
+      {
+        "icon": "map",
+        "title": "Land & Tenure",
+        "text": "The acting project sponsor, Mr. Anthony Timayio, together with five (5) other entrepreneurs, collectively own and control approximately 800 acres of land required for development. Landowners will grant long-term lease rights to a dedicated HoldCo, which will in turn sub-lease to the Project SPV — providing clean land governance and bankable contractual arrangements."
+      },
+      {
+        "icon": "landmark",
+        "title": "Corporate Governance",
+        "text": "A dedicated HoldCo is being incorporated as the Project Sponsor to institutionalise the structure and ensure bankability. The HoldCo will hold all project assets and contractual arrangements, with clear governance and an investor-ready framework suitable for capital participation at scale."
+      },
+      {
+        "icon": "trending-up",
+        "title": "Development Path",
+        "text": "Development has commenced with legal, technical and financial pre-feasibility to validate land rights, confirm achievable capacity, assess interconnection configuration and establish preliminary project cost. Subject to pre-feasibility confirmation, the Project will advance into full feasibility studies including ESIA, grid interconnection study, detailed financial modelling and PPA negotiation."
+      }
+    ],
+    "sponsor": {
+      "badge": "Acting Project Sponsor",
+      "name": "Mr. Anthony Timayio",
+      "detail": "Together with five (5) co-entrepreneurs who collectively own and control approximately 800 acres of land required for development — committed to advancing this project to financial close."
+    },
+    "opportunity": {
+      "title": "The Opportunity",
+      "text": "Subject to pre-feasibility confirmation, the Naresho Solar Ranches presents a significant investment opportunity with the potential to become Kenya's largest solar plant — a landmark infrastructure project for East Africa."
+    },
+    "advisors": {
+      "title": "Advisory Team",
+      "intro": "The Project is supported by an experienced advisory team:",
+      "list": [
+        {
+          "role": "Technical Advisor",
+          "name": "Questworks"
+        },
+        {
+          "role": "Financial Advisor",
+          "name": "Rebel Group"
+        },
+        {
+          "role": "Transaction & Legal Advisor",
+          "name": "Ashitiva Advocates"
+        }
+      ]
+    },
+    "kenyaContext": {
+      "title": "Kenya Energy Context",
+      "text": "Kenya has set ambitious renewable energy targets under Vision 2030 and the National Energy Policy. Solar PV is a key pillar — and the Naresho Project is positioned to make a defining contribution to the nation's clean energy future."
+    }
+  },
+  "structure": {
+    "tag": "Corporate Structure",
+    "heading": "A Clean, Bankable Project Architecture",
+    "desc": "The Project is structured to international standards — designed to satisfy institutional lenders, development finance institutions, and equity investors.",
+    "levels": [
+      {
+        "box": {
+          "icon": "users",
+          "title": "Landowner Shareholders",
+          "desc": "6 entrepreneurs including Mr. Anthony Timayio — collectively owning ~800 acres",
+          "type": "top"
+        }
+      },
+      {
+        "box": {
+          "icon": "landmark",
+          "title": "HoldCo",
+          "badge": "Being Incorporated",
+          "desc": "Project Sponsor entity — holds all land leases, project assets, and contractual arrangements. Provides clean governance and investor-ready framework.",
+          "type": "holdco"
+        }
+      },
+      {
+        "split": true,
+        "boxes": [
+          {
+            "icon": "zap",
+            "title": "Project SPV",
+            "desc": "Sub-leases land from HoldCo. Holds the generation licence, PPA, and EPC contracts. The investable entity.",
+            "type": "spv"
+          },
+          {
+            "icon": "file-text",
+            "title": "Key Contracts",
+            "desc": "PPA with KPLC / KETRACO · EPC Contract · O&M Agreement · Land Sub-Lease · ESIA Approval",
+            "type": "neutral"
+          }
+        ]
+      }
+    ]
+  },
+  "timeline": {
+    "tag": "Development Roadmap",
+    "heading": "Clear Path to Financial Close",
+    "desc": "A structured, phased development programme — from pre-feasibility through to commercial operations.",
+    "items": [
+      {
+        "phase": "Phase 1 — Current",
+        "title": "Pre-Feasibility",
+        "active": true,
+        "items": [
+          "Land rights validation",
+          "Interconnection configuration assessment",
+          "Achievable capacity confirmation",
+          "Preliminary project cost establishment"
+        ]
+      },
+      {
+        "phase": "Phase 2",
+        "title": "Full Feasibility Studies",
+        "active": false,
+        "items": [
+          "Environmental & Social Impact Assessment (ESIA)",
+          "Grid interconnection study",
+          "Detailed financial modelling",
+          "HoldCo incorporation"
+        ]
+      },
+      {
+        "phase": "Phase 3",
+        "title": "Project Approvals & PPA",
+        "active": false,
+        "items": [
+          "ESIA approval from NEMA",
+          "Generation licence application",
+          "PPA negotiation with offtaker",
+          "Grid connection agreement"
+        ]
+      },
+      {
+        "phase": "Phase 4",
+        "title": "Financial Close & Construction",
+        "active": false,
+        "items": [
+          "Equity & debt financing secured",
+          "EPC contractor appointed",
+          "Construction commencement",
+          "Grid connection works"
+        ]
+      },
+      {
+        "phase": "Phase 5",
+        "title": "Commercial Operations (COD)",
+        "active": false,
+        "items": [
+          "Plant commissioning",
+          "Commercial Operations Date declared",
+          "Revenue generation commences",
+          "Kenya's largest solar plant operational"
+        ]
+      }
+    ]
+  },
+  "why": {
+    "tag": "The Investment Case",
+    "heading": "Why This Project Stands Apart",
+    "desc": "Six compelling reasons why the Naresho Solar Ranches represents a rare and strategically superior opportunity in East Africa's energy market.",
+    "cards": [
+      {
+        "num": "01",
+        "icon": "sun",
+        "title": "World-Class Solar Resource",
+        "text": "Kajiado County receives among Kenya's highest levels of solar irradiation — delivering strong, bankable energy yield projections that underpin long-term revenue stability for investors."
+      },
+      {
+        "num": "02",
+        "icon": "network",
+        "title": "Unmatched Grid Proximity",
+        "text": "Immediate access to the 400 kV KETRACO substation — the same infrastructure serving the Kipeto Wind Farm — significantly reduces interconnection risk, cost, and timeline compared to greenfield alternatives."
+      },
+      {
+        "num": "03",
+        "icon": "file-check",
+        "title": "Bankable Land Rights",
+        "text": "Long-term leases from owner-occupier landowners provide the project with clear, unencumbered, and bankable land tenure — a critical de-risking factor for lenders and equity investors alike."
+      },
+      {
+        "num": "04",
+        "icon": "landmark",
+        "title": "Institutional-Grade Structure",
+        "text": "The HoldCo/SPV architecture, combined with internationally reputed advisors (Questworks, Rebel Group, Ashitiva Advocates) ensures the Project meets the governance standards required by DFIs and institutional lenders."
+      },
+      {
+        "num": "05",
+        "icon": "trending-up",
+        "title": "Favourable Market Conditions",
+        "text": "Kenya's growing electricity demand, government commitment to renewable energy under Vision 2030, and an established IPP framework create a highly supportive policy and commercial environment for solar investment."
+      },
+      {
+        "num": "06",
+        "icon": "award",
+        "title": "Landmark Scale & First-Mover Advantage",
+        "text": "At 100 MW, this project has the potential to become Kenya's largest solar plant — offering investors the prestige, scale efficiencies, and market positioning that only a landmark project can provide."
+      }
+    ],
+    "cta": {
+      "heading": "Ready to be part of Kenya's clean energy future?",
+      "text": "We are currently engaging with strategic investors, development finance institutions, and energy sector partners. Early-stage engagement offers the most favourable participation terms.",
+      "btnText": "Start the Conversation",
+      "btnLink": "#contact"
+    }
+  },
+  "contact": {
+    "tag": "Get In Touch",
+    "heading": "Let's Build Kenya's Energy Future Together",
+    "desc": "Whether you are an investor, development finance institution, EPC contractor, or strategic partner — we welcome your enquiry.",
+    "items": [
+      {
+        "icon": "building-2",
+        "title": "Registered Office",
+        "text": "Victoria Towers, Kilimanjaro Street<br />Westlands, Nairobi<br />Nairobi County, Kenya"
+      },
+      {
+        "icon": "mail-open",
+        "title": "Postal Address",
+        "text": "P.O Box 21372, 00100<br />G.P.O Nairobi, Kenya"
+      },
+      {
+        "icon": "phone",
+        "title": "Telephone",
+        "text": "<a href=\"tel:+254720145618\">+254 720 145 618</a>"
+      },
+      {
+        "icon": "mail",
+        "title": "Email",
+        "text": "<a href=\"mailto:geniuspoint2020@gmail.com\">geniuspoint2020@gmail.com</a>"
+      },
+      {
+        "icon": "map-pin",
+        "title": "Project Site",
+        "text": "Naresho, Kajiado County, Kenya"
+      }
+    ],
+    "disclaimer": "This website is for informational purposes only and does not constitute an offer or solicitation to invest. Investment in energy infrastructure involves risk. Please conduct your own due diligence.",
+    "formTitle": "Send Us a Message",
+    "formSubjects": [
+      "Equity Investment",
+      "Debt Financing / DFI",
+      "EPC / Technical Partnership",
+      "Advisory Services",
+      "Media & Press",
+      "General Enquiry"
+    ]
+  },
+  "footer": {
+    "desc": "A 100 MW utility-scale solar photovoltaic development in Naresho, Kajiado County, Kenya — with the potential to become East Africa's largest solar plant.",
+    "reg": "Reg. No. PVT-J616JA05  |  Incorporated 14 September 2026",
+    "address": "Victoria Towers, Kilimanjaro Street<br />Westlands, Nairobi, Kenya",
+    "phone": "+254 720 145 618",
+    "email": "geniuspoint2020@gmail.com",
+    "postal": "P.O Box 21372, 00100 Nairobi",
+    "copyright": "© 2026 Naresho Solar Ranches. All rights reserved.  |  Reg. No. PVT-J616JA05  |  Companies Act, 2015 — Republic of Kenya"
+  },
+  "team": [
+    {
+      "id": "1792596839445",
+      "name": "TIMAYIO MOINKET",
+      "role": "PROJECT DIRECTOR",
+      "bio": "",
+      "photo": "/uploads/upload_1792596839397.png"
+    }
+  ],
+  "blog": [
+    {
+      "id": "1792650713914",
+      "title": "Site Visit",
+      "excerpt": "This is a site visit",
+      "content": "we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments we achieved good moments",
+      "author": "Admin",
+      "date": "2026-10-22",
+      "image": "/uploads/upload_1792650713903.png",
+      "published": true
+    }
+  ],
+  "gallery": [
+    {
+      "id": "1792650574559",
+      "image": "/uploads/upload_1792650574540.png",
+      "caption": "site visit",
+      "category": "General",
+      "date": "2026-10-22"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel — Naresho Solar Ranches</title>
+  <link rel="stylesheet" href="css/admin.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- ===== LOGIN SCREEN ===== -->
+  <div id="loginScreen" class="login-screen">
+    <div class="login-card">
+      <div class="login-logo">
+        <img src="../logo.png" alt="Naresho Solar Ranches" />
+      </div>
+      <h1>Admin Panel</h1>
+      <p class="login-sub">Sign in to manage your website</p>
+      <form id="loginForm" class="login-form">
+        <div class="form-group">
+          <label>Username</label>
+          <input type="text" id="loginUser" placeholder="Enter username" required autocomplete="username" />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="loginPass" placeholder="Enter password" required autocomplete="current-password" />
+        </div>
+        <div id="loginError" class="login-error"></div>
+        <button type="submit" class="btn-login">Sign In</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===== DASHBOARD ===== -->
+  <div id="dashboard" class="dashboard" style="display:none;">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="../logo.png" alt="Logo" class="sidebar-logo" />
+        <span>Admin Panel</span>
+      </div>
+      <nav class="sidebar-nav">
+        <button class="nav-btn active" data-section="hero"><i data-lucide="home"></i> Hero</button>
+        <button class="nav-btn" data-section="about"><i data-lucide="info"></i> About</button>
+        <button class="nav-btn" data-section="project"><i data-lucide="sun"></i> Project</button>
+        <button class="nav-btn" data-section="structure"><i data-lucide="landmark"></i> Structure</button>
+        <button class="nav-btn" data-section="timeline"><i data-lucide="clock"></i> Timeline</button>
+        <button class="nav-btn" data-section="why"><i data-lucide="trending-up"></i> Why Invest</button>
+        <button class="nav-btn" data-section="contact"><i data-lucide="mail"></i> Contact</button>
+        <button class="nav-btn" data-section="footer"><i data-lucide="layout"></i> Footer</button>
+        <button class="nav-btn" data-section="blog"><i data-lucide="newspaper"></i> Blog / News</button>
+        <button class="nav-btn" data-section="gallery"><i data-lucide="image"></i> Gallery</button>
+        <button class="nav-btn" data-section="team"><i data-lucide="users"></i> Our Team</button>
+        <button class="nav-btn" data-section="settings"><i data-lucide="settings"></i> Settings</button>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="/" target="_blank" class="view-site"><i data-lucide="external-link"></i> View Site</a>
+        <button id="logoutBtn" class="logout-btn"><i data-lucide="log-out"></i> Logout</button>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <header class="main-header">
+        <h2 id="pageTitle">Hero Section</h2>
+        <button id="saveBtn" class="save-btn"><i data-lucide="save"></i> Save Changes</button>
+      </header>
+
+      <div class="content-area" id="contentArea">
+        <!-- Dynamic content goes here -->
+      </div>
+    </main>
+  </div>
+
+  <!-- Toast notification -->
+  <div id="toast" class="toast"></div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

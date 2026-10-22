@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Narresho Solar Park Limited — 100 MW Solar PV, Kenya</title>
+  <title>Naresho Solar Ranches Limited — 100 MW Solar Ranches, Kenya</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
   <!-- Lucide icons (clean SVG line icons, no emojis) -->
@@ -15,17 +15,19 @@
   <header class="navbar" id="navbar">
     <div class="nav-container">
       <div class="logo">
-        <img src="logo.png" alt="Narresho Solar Park Limited" />
+        <img src="logo.png" alt="Naresho Solar Ranches Limited" id="nav-logo" />
       </div>
       <nav>
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
           <li class="nav-close-item"><button class="nav-close" id="navClose" aria-label="Close menu">&times;</button></li>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#project">The Project</a></li>
-          <li><a href="#structure">Structure</a></li>
-          <li><a href="#timeline">Roadmap</a></li>
           <li><a href="#why">Why Invest</a></li>
+          <li><a href="#advisory">Advisory Team</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="/blog">News</a></li>
+          <li><a href="/gallery">Gallery</a></li>
           <li><a href="#contact" class="nav-cta">Contact Us</a></li>
         </ul>
       </nav>
@@ -42,38 +44,12 @@
     <div class="hero-bg-grid"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <div class="hero-badge">Republic of Kenya &nbsp;|&nbsp; Kajiado County</div>
-      <h1>Kenya's Next <span class="hero-highlight">Landmark</span><br/>Solar Energy Project</h1>
-      <p class="hero-sub">
-        Narresho Solar Park Limited is developing a <strong>100 MW utility-scale solar photovoltaic plant</strong> in Naresho, Kajiado County — strategically positioned within Kenya's premier renewable energy corridor, with direct access to the national high-voltage grid.
-      </p>
-      <div class="hero-btns">
-        <a href="#project" class="btn btn-primary">View the Project</a>
-        <a href="#why" class="btn btn-outline">Investment Case</a>
-      </div>
+      <div class="hero-badge" id="hero-badge"></div>
+      <h1 id="hero-heading"></h1>
+      <p class="hero-sub" id="hero-sub"></p>
+      <div class="hero-btns" id="hero-btns"></div>
     </div>
-    <div class="hero-stats">
-      <div class="stat">
-        <span class="stat-num">100 <span class="stat-unit">MW</span></span>
-        <span class="stat-label">Estimated Capacity</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">800+ <span class="stat-unit">ac</span></span>
-        <span class="stat-label">Land Secured</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">400 <span class="stat-unit">kV</span></span>
-        <span class="stat-label">KETRACO Grid Access</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">6</span>
-        <span class="stat-label">Landowner Sponsors</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">#1</span>
-        <span class="stat-label">Potential in Kenya</span>
-      </div>
-    </div>
+    <div class="hero-stats" id="hero-stats"></div>
   </section>
 
   <!-- ===== OPPORTUNITY BANNER ===== -->
@@ -81,10 +57,10 @@
     <div class="container">
       <div class="opp-inner">
         <div class="opp-text">
-          <span class="opp-tag">Significant Investment Opportunity</span>
-          <p>Subject to pre-feasibility confirmation, this Project presents a compelling opportunity with the potential to become <strong>Kenya's largest solar plant</strong> — a landmark in East Africa's clean energy transition.</p>
+          <span class="opp-tag" id="opp-tag"></span>
+          <p id="opp-text"></p>
         </div>
-        <a href="#contact" class="btn btn-primary">Express Interest</a>
+        <a href="#contact" class="btn btn-primary" id="opp-btn"></a>
       </div>
     </div>
   </section>
@@ -94,68 +70,12 @@
     <div class="container">
       <div class="about-layout">
         <div class="about-left">
-          <span class="section-tag">Who We Are</span>
-          <h2>Built on Strong Foundations</h2>
-          <p>Narresho Solar Park Limited is a duly incorporated Private Limited Company (Reg. No. <strong>PVT-J616JA05</strong>), registered under Kenya's Companies Act, 2015 on <strong>14 September 2026</strong>.</p>
-          <p>We are a purpose-built vehicle to develop, finance, and operate a 100 MW solar PV plant that will feed into Kenya's national transmission network — delivering stable, clean, and competitively priced electricity at scale.</p>
-          <p>Headquartered at <strong>Victoria Towers, Westlands, Nairobi</strong>, our team combines deep local knowledge with international-grade advisory expertise across technical, financial, and legal disciplines.</p>
-          <div class="about-cert">
-            <div class="cert-item">
-              <span class="cert-check"></span>
-              <span>Incorporated — Republic of Kenya</span>
-            </div>
-            <div class="cert-item">
-              <span class="cert-check"></span>
-              <span>Reg. No. PVT-J616JA05</span>
-            </div>
-            <div class="cert-item">
-              <span class="cert-check"></span>
-              <span>1,000 Ordinary Shares — KES 100 par value</span>
-            </div>
-            <div class="cert-item">
-              <span class="cert-check"></span>
-              <span>Companies Act, 2015 compliant</span>
-            </div>
-          </div>
+          <span class="section-tag" id="about-tag"></span>
+          <h2 id="about-heading"></h2>
+          <div id="about-paras"></div>
+          <div class="about-cert" id="about-certs"></div>
         </div>
-        <div class="about-right">
-          <div class="about-card">
-            <div class="about-icon-box">
-              <i data-lucide="map-pin"></i>
-            </div>
-            <div>
-              <h3>Project Location</h3>
-              <p>Naresho, Kajiado County — one of Kenya's highest solar irradiation zones, with strong and consistent resource profiles year-round.</p>
-            </div>
-          </div>
-          <div class="about-card">
-            <div class="about-icon-box">
-              <i data-lucide="zap"></i>
-            </div>
-            <div>
-              <h3>Grid-Connected Asset</h3>
-              <p>Immediate proximity to the 400 kV KETRACO transmission substation — Kenya's primary high-voltage national grid corridor.</p>
-            </div>
-          </div>
-          <div class="about-card">
-            <div class="about-icon-box">
-              <i data-lucide="building-2"></i>
-            </div>
-            <div>
-              <h3>Investor-Ready Structure</h3>
-              <p>Dedicated HoldCo governance, clean SPV structure, experienced advisory team — all designed for institutional capital participation.</p>
-            </div>
-          </div>
-          <div class="about-card">
-            <div class="about-icon-box">
-              <i data-lucide="globe"></i>
-            </div>
-            <div>
-              <h3>East Africa Impact</h3>
-              <p>100 MW of zero-emission solar power advancing Kenya's Vision 2030 energy goals and supporting the country's green growth agenda.</p>
-            </div>
-          </div>
-        </div>
+        <div class="about-right" id="about-cards"></div>
       </div>
     </div>
   </section>
@@ -164,117 +84,22 @@
   <section class="project section" id="project">
     <div class="container">
       <div class="section-header light">
-        <span class="section-tag">The Project</span>
-        <h2>100 MW Naresho Solar PV Plant</h2>
-        <p class="section-desc">A utility-scale photovoltaic development positioned at the intersection of Kenya's best solar resource, strongest grid infrastructure, and most bankable land tenure arrangements.</p>
+        <span class="section-tag" id="proj-tag"></span>
+        <h2 id="proj-heading"></h2>
+        <p class="section-desc" id="proj-desc"></p>
       </div>
 
-      <div class="project-facts">
-        <div class="fact-card">
-          <div class="fact-icon-box"><i data-lucide="sun"></i></div>
-          <div class="fact-label">Technology</div>
-          <div class="fact-value">Utility-Scale Solar PV</div>
-        </div>
-        <div class="fact-card">
-          <div class="fact-icon-box"><i data-lucide="battery-charging"></i></div>
-          <div class="fact-label">Capacity</div>
-          <div class="fact-value">100 MW AC</div>
-        </div>
-        <div class="fact-card">
-          <div class="fact-icon-box"><i data-lucide="map-pin"></i></div>
-          <div class="fact-label">Location</div>
-          <div class="fact-value">Naresho, Kajiado County</div>
-        </div>
-        <div class="fact-card">
-          <div class="fact-icon-box"><i data-lucide="land-plot"></i></div>
-          <div class="fact-label">Land Area</div>
-          <div class="fact-value">~800 Acres</div>
-        </div>
-        <div class="fact-card">
-          <div class="fact-icon-box"><i data-lucide="cable"></i></div>
-          <div class="fact-label">Grid Connection</div>
-          <div class="fact-value">400 kV KETRACO</div>
-        </div>
-        <div class="fact-card">
-          <div class="fact-icon-box"><i data-lucide="clipboard-list"></i></div>
-          <div class="fact-label">Stage</div>
-          <div class="fact-value">Pre-Feasibility</div>
-        </div>
-      </div>
+      <div class="project-facts" id="proj-facts"></div>
+
+      <!-- Advisory Team scroll anchor -->
+      <span id="advisory" style="display:block;position:relative;top:-80px;visibility:hidden;"></span>
 
       <div class="project-layout">
         <div class="project-info">
-          <h3 class="project-sub-heading">Project Overview</h3>
-          <div class="project-detail">
-            <div class="detail-icon-box"><i data-lucide="map-pin"></i></div>
-            <div>
-              <h4>Strategic Location</h4>
-              <p>Naresho, Kajiado County lies within one of Kenya's highest solar irradiation zones — delivering strong, consistent solar resource profiles that support competitive energy yield assumptions and long-term generation stability.</p>
-            </div>
-          </div>
-          <div class="project-detail">
-            <div class="detail-icon-box"><i data-lucide="cable"></i></div>
-            <div>
-              <h4>Exceptional Grid Access</h4>
-              <p>The Project is in immediate proximity to a <strong>400 kV KETRACO transmission substation</strong> forming part of Kenya's national grid. This substation serves major grid-connected assets including the <strong>Kipeto Wind Farm</strong> (majority shareholder: Meridiam) — placing Narresho within an established institutional-grade renewable energy corridor with direct access to high-voltage transmission infrastructure.</p>
-            </div>
-          </div>
-          <div class="project-detail">
-            <div class="detail-icon-box"><i data-lucide="map"></i></div>
-            <div>
-              <h4>Land &amp; Tenure</h4>
-              <p>The acting project sponsor, <strong>Mr. Anthony Timayio</strong>, together with five (5) other entrepreneurs, collectively own and control approximately <strong>800 acres</strong> of land required for development. Landowners will grant long-term lease rights to a dedicated HoldCo, which will in turn sub-lease to the Project SPV — providing clean land governance and bankable contractual arrangements.</p>
-            </div>
-          </div>
-          <div class="project-detail">
-            <div class="detail-icon-box"><i data-lucide="landmark"></i></div>
-            <div>
-              <h4>Corporate Governance</h4>
-              <p>A dedicated <strong>HoldCo</strong> is being incorporated as the Project Sponsor to institutionalise the structure and ensure bankability. The HoldCo will hold all project assets and contractual arrangements, with clear governance and an <strong>investor-ready framework</strong> suitable for capital participation at scale.</p>
-            </div>
-          </div>
-          <div class="project-detail">
-            <div class="detail-icon-box"><i data-lucide="trending-up"></i></div>
-            <div>
-              <h4>Development Path</h4>
-              <p>Development has commenced with legal, technical and financial pre-feasibility to validate land rights, confirm achievable capacity, assess interconnection configuration and establish preliminary project cost. Subject to pre-feasibility confirmation, the Project will advance into full feasibility studies including <strong>ESIA, grid interconnection study, detailed financial modelling and PPA negotiation</strong>.</p>
-            </div>
-          </div>
+          <h3 class="project-sub-heading" id="proj-subheading"></h3>
+          <div id="proj-details"></div>
         </div>
-        <div class="project-visual">
-          <div class="visual-card sponsor-card">
-            <div class="visual-badge">Acting Project Sponsor</div>
-            <p class="sponsor-name">Mr. Anthony Timayio</p>
-            <p class="sponsor-detail">Together with five (5) co-entrepreneurs who collectively own and control approximately 800 acres of land required for development — committed to advancing this project to financial close.</p>
-          </div>
-          <div class="visual-card highlight">
-            <div class="highlight-bar"></div>
-            <h4>The Opportunity</h4>
-            <p>Subject to pre-feasibility confirmation, the Naresho Solar Park presents a <strong>significant investment opportunity</strong> with the potential to become <strong>Kenya's largest solar plant</strong> — a landmark infrastructure project for East Africa.</p>
-          </div>
-          <div class="visual-card">
-            <h4>Advisory Team</h4>
-            <p class="advisory-intro">The Project is supported by an experienced advisory team:</p>
-            <ul class="advisory-list">
-              <li>
-                <div class="adv-role">Technical Advisor</div>
-                <div class="adv-name">Questworks</div>
-              </li>
-              <li>
-                <div class="adv-role">Financial Advisor</div>
-                <div class="adv-name">Rebel Group</div>
-              </li>
-              <li>
-                <div class="adv-role">Transaction &amp; Legal Advisor</div>
-                <div class="adv-name">Ashitiva Advocates</div>
-              </li>
-            </ul>
-          </div>
-          <div class="visual-card kenya-context">
-            <h4>Kenya Energy Context</h4>
-            <p>Kenya has set ambitious renewable energy targets under <strong>Vision 2030</strong> and the National Energy Policy. Solar PV is a key pillar — and the Naresho Project is positioned to make a defining contribution to the nation's clean energy future.</p>
-          </div>
-        </div>
+        <div class="project-visual" id="proj-visual"></div>
       </div>
     </div>
   </section>
@@ -283,40 +108,11 @@
   <section class="structure section" id="structure">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Corporate Structure</span>
-        <h2>A Clean, Bankable Project Architecture</h2>
-        <p class="section-desc">The Project is structured to international standards — designed to satisfy institutional lenders, development finance institutions, and equity investors.</p>
+        <span class="section-tag" id="struct-tag"></span>
+        <h2 id="struct-heading"></h2>
+        <p class="section-desc" id="struct-desc"></p>
       </div>
-      <div class="structure-diagram">
-        <div class="struct-level">
-          <div class="struct-box top-box">
-            <div class="struct-icon-box gold"><i data-lucide="users"></i></div>
-            <div class="struct-title">Landowner Shareholders</div>
-            <div class="struct-desc">6 entrepreneurs including Mr. Anthony Timayio — collectively owning ~800 acres</div>
-          </div>
-        </div>
-        <div class="struct-arrow"><i data-lucide="arrow-down"></i></div>
-        <div class="struct-level">
-          <div class="struct-box holdco-box">
-            <div class="struct-icon-box primary"><i data-lucide="landmark"></i></div>
-            <div class="struct-title">HoldCo <span class="struct-badge">Being Incorporated</span></div>
-            <div class="struct-desc">Project Sponsor entity — holds all land leases, project assets, and contractual arrangements. Provides clean governance and investor-ready framework.</div>
-          </div>
-        </div>
-        <div class="struct-arrow"><i data-lucide="arrow-down"></i></div>
-        <div class="struct-level struct-split">
-          <div class="struct-box spv-box">
-            <div class="struct-icon-box green"><i data-lucide="zap"></i></div>
-            <div class="struct-title">Project SPV</div>
-            <div class="struct-desc">Sub-leases land from HoldCo. Holds the generation licence, PPA, and EPC contracts. The investable entity.</div>
-          </div>
-          <div class="struct-box">
-            <div class="struct-icon-box neutral"><i data-lucide="file-text"></i></div>
-            <div class="struct-title">Key Contracts</div>
-            <div class="struct-desc">PPA with KPLC / KETRACO &middot; EPC Contract &middot; O&amp;M Agreement &middot; Land Sub-Lease &middot; ESIA Approval</div>
-          </div>
-        </div>
-      </div>
+      <div class="structure-diagram" id="struct-diagram"></div>
     </div>
   </section>
 
@@ -324,77 +120,11 @@
   <section class="timeline section" id="timeline">
     <div class="container">
       <div class="section-header light">
-        <span class="section-tag">Development Roadmap</span>
-        <h2>Clear Path to Financial Close</h2>
-        <p class="section-desc">A structured, phased development programme — from pre-feasibility through to commercial operations.</p>
+        <span class="section-tag" id="tl-tag"></span>
+        <h2 id="tl-heading"></h2>
+        <p class="section-desc" id="tl-desc"></p>
       </div>
-      <div class="timeline-track">
-        <div class="timeline-item active">
-          <div class="tl-dot active-dot"></div>
-          <div class="tl-content">
-            <div class="tl-phase">Phase 1 — Current</div>
-            <h4>Pre-Feasibility</h4>
-            <ul>
-              <li>Land rights validation</li>
-              <li>Interconnection configuration assessment</li>
-              <li>Achievable capacity confirmation</li>
-              <li>Preliminary project cost establishment</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <div class="tl-phase">Phase 2</div>
-            <h4>Full Feasibility Studies</h4>
-            <ul>
-              <li>Environmental &amp; Social Impact Assessment (ESIA)</li>
-              <li>Grid interconnection study</li>
-              <li>Detailed financial modelling</li>
-              <li>HoldCo incorporation</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <div class="tl-phase">Phase 3</div>
-            <h4>Project Approvals &amp; PPA</h4>
-            <ul>
-              <li>ESIA approval from NEMA</li>
-              <li>Generation licence application</li>
-              <li>PPA negotiation with offtaker</li>
-              <li>Grid connection agreement</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <div class="tl-phase">Phase 4</div>
-            <h4>Financial Close &amp; Construction</h4>
-            <ul>
-              <li>Equity &amp; debt financing secured</li>
-              <li>EPC contractor appointed</li>
-              <li>Construction commencement</li>
-              <li>Grid connection works</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="tl-dot"></div>
-          <div class="tl-content">
-            <div class="tl-phase">Phase 5</div>
-            <h4>Commercial Operations (COD)</h4>
-            <ul>
-              <li>Plant commissioning</li>
-              <li>Commercial Operations Date declared</li>
-              <li>Revenue generation commences</li>
-              <li>Kenya's largest solar plant operational</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <div class="timeline-track" id="tl-track"></div>
     </div>
   </section>
 
@@ -402,55 +132,32 @@
   <section class="why section" id="why">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">The Investment Case</span>
-        <h2>Why This Project Stands Apart</h2>
-        <p class="section-desc">Six compelling reasons why the Naresho Solar Park represents a rare and strategically superior opportunity in East Africa's energy market.</p>
+        <span class="section-tag" id="why-tag"></span>
+        <h2 id="why-heading"></h2>
+        <p class="section-desc" id="why-desc"></p>
       </div>
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="why-num">01</div>
-          <div class="why-icon-box"><i data-lucide="sun"></i></div>
-          <h3>World-Class Solar Resource</h3>
-          <p>Kajiado County receives among Kenya's highest levels of solar irradiation — delivering strong, bankable energy yield projections that underpin long-term revenue stability for investors.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-num">02</div>
-          <div class="why-icon-box"><i data-lucide="network"></i></div>
-          <h3>Unmatched Grid Proximity</h3>
-          <p>Immediate access to the 400 kV KETRACO substation — the same infrastructure serving the Kipeto Wind Farm — significantly reduces interconnection risk, cost, and timeline compared to greenfield alternatives.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-num">03</div>
-          <div class="why-icon-box"><i data-lucide="file-check"></i></div>
-          <h3>Bankable Land Rights</h3>
-          <p>Long-term leases from owner-occupier landowners provide the project with clear, unencumbered, and bankable land tenure — a critical de-risking factor for lenders and equity investors alike.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-num">04</div>
-          <div class="why-icon-box"><i data-lucide="landmark"></i></div>
-          <h3>Institutional-Grade Structure</h3>
-          <p>The HoldCo/SPV architecture, combined with internationally reputed advisors (Questworks, Rebel Group, Ashitiva Advocates) ensures the Project meets the governance standards required by DFIs and institutional lenders.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-num">05</div>
-          <div class="why-icon-box"><i data-lucide="trending-up"></i></div>
-          <h3>Favourable Market Conditions</h3>
-          <p>Kenya's growing electricity demand, government commitment to renewable energy under Vision 2030, and an established IPP framework create a highly supportive policy and commercial environment for solar investment.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-num">06</div>
-          <div class="why-icon-box"><i data-lucide="award"></i></div>
-          <h3>Landmark Scale &amp; First-Mover Advantage</h3>
-          <p>At 100 MW, this project has the potential to become Kenya's largest solar plant — offering investors the prestige, scale efficiencies, and market positioning that only a landmark project can provide.</p>
-        </div>
-      </div>
+      <div class="why-grid" id="why-grid"></div>
 
       <div class="invest-cta">
         <div class="invest-cta-text">
-          <h3>Ready to be part of Kenya's clean energy future?</h3>
-          <p>We are currently engaging with strategic investors, development finance institutions, and energy sector partners. Early-stage engagement offers the most favourable participation terms.</p>
+          <h3 id="why-cta-heading"></h3>
+          <p id="why-cta-text"></p>
         </div>
-        <a href="#contact" class="btn btn-primary">Start the Conversation</a>
+        <a href="#contact" class="btn btn-primary" id="why-cta-btn"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR TEAM ===== -->
+  <section class="team section" id="team">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our People</span>
+        <h2>Meet the Team</h2>
+        <p class="section-desc">The dedicated professionals driving the Naresho Solar Ranches project forward.</p>
+      </div>
+      <div class="team-grid" id="team-grid">
+        <p style="text-align:center;color:#888;grid-column:1/-1;padding:20px 0;">Team information coming soon.</p>
       </div>
     </div>
   </section>
@@ -459,54 +166,20 @@
   <section class="contact section" id="contact">
     <div class="container">
       <div class="section-header light">
-        <span class="section-tag">Get In Touch</span>
-        <h2>Let's Build Kenya's Energy Future Together</h2>
-        <p class="section-desc">Whether you are an investor, development finance institution, EPC contractor, or strategic partner — we welcome your enquiry.</p>
+        <span class="section-tag" id="contact-tag"></span>
+        <h2 id="contact-heading"></h2>
+        <p class="section-desc" id="contact-desc"></p>
       </div>
       <div class="contact-layout">
         <div class="contact-details">
-          <div class="contact-item">
-            <div class="contact-icon-box"><i data-lucide="building-2"></i></div>
-            <div>
-              <h4>Registered Office</h4>
-              <p>Victoria Towers, Kilimanjaro Street<br />Westlands, Nairobi<br />Nairobi County, Kenya</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon-box"><i data-lucide="mail-open"></i></div>
-            <div>
-              <h4>Postal Address</h4>
-              <p>P.O Box 21372, 00100<br />G.P.O Nairobi, Kenya</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon-box"><i data-lucide="phone"></i></div>
-            <div>
-              <h4>Telephone</h4>
-              <p><a href="tel:+254720145618">+254 720 145 618</a></p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon-box"><i data-lucide="mail"></i></div>
-            <div>
-              <h4>Email</h4>
-              <p><a href="mailto:geniuspoint2020@gmail.com">geniuspoint2020@gmail.com</a></p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon-box"><i data-lucide="map-pin"></i></div>
-            <div>
-              <h4>Project Site</h4>
-              <p>Naresho, Kajiado County, Kenya</p>
-            </div>
-          </div>
+          <div id="contact-items"></div>
           <div class="contact-disclaimer">
-            <p>This website is for informational purposes only and does not constitute an offer or solicitation to invest. Investment in energy infrastructure involves risk. Please conduct your own due diligence.</p>
+            <p id="contact-disclaimer"></p>
           </div>
         </div>
         <div class="contact-form-wrap">
           <form class="contact-form" onsubmit="handleSubmit(event)">
-            <h3>Send Us a Message</h3>
+            <h3 id="contact-form-title"></h3>
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Full Name</label>
@@ -523,19 +196,11 @@
             </div>
             <div class="form-group">
               <label for="subject">Nature of Enquiry</label>
-              <select id="subject">
-                <option value="">Select a topic</option>
-                <option value="investment">Equity Investment</option>
-                <option value="debt">Debt Financing / DFI</option>
-                <option value="epc">EPC / Technical Partnership</option>
-                <option value="advisory">Advisory Services</option>
-                <option value="media">Media &amp; Press</option>
-                <option value="general">General Enquiry</option>
-              </select>
+              <select id="subject"></select>
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" rows="5" placeholder="Tell us about your interest in the Naresho Solar Park project..." required></textarea>
+              <textarea id="message" rows="5" placeholder="Tell us about your interest in the Naresho Solar Ranches project..." required></textarea>
             </div>
             <button type="submit" class="btn btn-primary btn-full">Send Message</button>
             <p class="form-success" id="form-success">Thank you — a member of our team will be in touch shortly.</p>
@@ -550,9 +215,9 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <img src="logo.png" alt="Narresho Solar Park Limited" class="footer-logo" />
-          <p>A 100 MW utility-scale solar photovoltaic development in Naresho, Kajiado County, Kenya — with the potential to become East Africa's largest solar plant.</p>
-          <p class="footer-reg">Reg. No. PVT-J616JA05 &nbsp;|&nbsp; Incorporated 14 September 2026</p>
+          <img src="logo.png" alt="Naresho Solar Ranches Limited" class="footer-logo" id="footer-logo" />
+          <p id="footer-desc"></p>
+          <p class="footer-reg" id="footer-reg"></p>
         </div>
         <div class="footer-links">
           <h4>Navigation</h4>
@@ -560,28 +225,211 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#project">The Project</a></li>
-            <li><a href="#structure">Structure</a></li>
-            <li><a href="#timeline">Roadmap</a></li>
             <li><a href="#why">Why Invest</a></li>
+            <li><a href="#advisory">Advisory Team</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="/blog">News</a></li>
+            <li><a href="/gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-contact">
           <h4>Contact</h4>
-          <p>Victoria Towers, Kilimanjaro Street<br />Westlands, Nairobi, Kenya</p>
-          <p><a href="tel:+254720145618">+254 720 145 618</a></p>
-          <p><a href="mailto:geniuspoint2020@gmail.com">geniuspoint2020@gmail.com</a></p>
-          <p>P.O Box 21372, 00100 Nairobi</p>
+          <p id="footer-address"></p>
+          <p id="footer-phone-p"></p>
+          <p id="footer-email-p"></p>
+          <p id="footer-postal-p"></p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Narresho Solar Park Limited. All rights reserved. &nbsp;|&nbsp; Reg. No. PVT-J616JA05 &nbsp;|&nbsp; Companies Act, 2015 — Republic of Kenya</p>
+        <p id="footer-copyright"></p>
       </div>
     </div>
   </footer>
 
   <script>
-    // Init Lucide icons
+    let siteContent = {};
+
+    // ===== LOAD CONTENT FROM API =====
+    async function loadContent() {
+      try {
+        const res = await fetch('/api/content');
+        siteContent = await res.json();
+        renderAll();
+        // Scroll to hash after dynamic content renders (handles /#team, /#advisory from other pages)
+        if (window.location.hash) {
+          const hash = window.location.hash;
+          // Try multiple times in case content is still rendering
+          let attempts = 0;
+          const tryScroll = () => {
+            const target = document.querySelector(hash);
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else if (attempts < 5) {
+              attempts++;
+              setTimeout(tryScroll, 200);
+            }
+          };
+          setTimeout(tryScroll, 300);
+        }
+      } catch (err) {
+        console.error('Failed to load content:', err);
+      }
+    }
+
+    function setText(id, text) {
+      const el = document.getElementById(id);
+      if (el) el.textContent = text;
+    }
+    function setHTML(id, html) {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = html;
+    }
+
+    function renderAll() {
+      const c = siteContent;
+
+      // Update logo
+      if (c.site && c.site.logo) {
+        document.getElementById('nav-logo').src = c.site.logo;
+        document.getElementById('footer-logo').src = c.site.logo;
+      }
+      if (c.site && c.site.title) document.title = c.site.title;
+
+      // HERO
+      const h = c.hero;
+      setText('hero-badge', h.badge);
+      setHTML('hero-heading', h.heading.replace(h.headingHighlight, `<span class="hero-highlight">${h.headingHighlight}</span>`));
+      setHTML('hero-sub', h.subheading);
+      setHTML('hero-btns', `<a href="${h.btnPrimaryLink}" class="btn btn-primary">${h.btnPrimary}</a><a href="${h.btnSecondaryLink}" class="btn btn-outline">${h.btnSecondary}</a>`);
+      setHTML('hero-stats', h.stats.map(s => `<div class="stat"><span class="stat-num">${s.num} ${s.unit ? `<span class="stat-unit">${s.unit}</span>` : ''}</span><span class="stat-label">${s.label}</span></div>`).join(''));
+
+      // OPPORTUNITY BANNER
+      const o = c.opportunityBanner;
+      setText('opp-tag', o.tag);
+      setHTML('opp-text', o.text);
+      setText('opp-btn', o.btnText);
+      document.getElementById('opp-btn').href = o.btnLink;
+
+      // ABOUT
+      const a = c.about;
+      setText('about-tag', a.tag);
+      setText('about-heading', a.heading);
+      setHTML('about-paras', a.paragraphs.map(p => `<p>${p}</p>`).join(''));
+      setHTML('about-certs', a.certs.map(cert => `<div class="cert-item"><span class="cert-check"></span><span>${cert}</span></div>`).join(''));
+      setHTML('about-cards', a.cards.map(card => `<div class="about-card"><div class="about-icon-box"><i data-lucide="${card.icon}"></i></div><div><h3>${card.title}</h3><p>${card.text}</p></div></div>`).join(''));
+
+      // PROJECT
+      const p = c.project;
+      setText('proj-tag', p.tag);
+      setText('proj-heading', p.heading);
+      setText('proj-desc', p.desc);
+      setText('proj-subheading', p.subHeading);
+      setHTML('proj-facts', p.facts.map(f => `<div class="fact-card"><div class="fact-icon-box"><i data-lucide="${f.icon}"></i></div><div class="fact-label">${f.label}</div><div class="fact-value">${f.value}</div></div>`).join(''));
+      setHTML('proj-details', p.details.map(d => `<div class="project-detail"><div class="detail-icon-box"><i data-lucide="${d.icon}"></i></div><div><h4>${d.title}</h4><p>${d.text}</p></div></div>`).join(''));
+
+      // Project visual cards
+      let visualHtml = '';
+      visualHtml += `<div class="visual-card sponsor-card"><div class="visual-badge">${p.sponsor.badge}</div><p class="sponsor-name">${p.sponsor.name}</p><p class="sponsor-detail">${p.sponsor.detail}</p></div>`;
+      visualHtml += `<div class="visual-card highlight"><div class="highlight-bar"></div><h4>${p.opportunity.title}</h4><p>${p.opportunity.text}</p></div>`;
+      visualHtml += `<div class="visual-card"><h4>${p.advisors.title}</h4><p class="advisory-intro">${p.advisors.intro}</p><ul class="advisory-list">${p.advisors.list.map(adv => `<li><div class="adv-role">${adv.role}</div><div class="adv-name">${adv.name}</div></li>`).join('')}</ul></div>`;
+      visualHtml += `<div class="visual-card kenya-context"><h4>${p.kenyaContext.title}</h4><p>${p.kenyaContext.text}</p></div>`;
+      setHTML('proj-visual', visualHtml);
+
+      // STRUCTURE
+      const s = c.structure;
+      setText('struct-tag', s.tag);
+      setText('struct-heading', s.heading);
+      setText('struct-desc', s.desc);
+      let structHtml = '';
+      s.levels.forEach(lv => {
+        if (lv.box) {
+          structHtml += `<div class="struct-level"><div class="struct-box ${lv.box.type === 'top' ? 'top-box' : lv.box.type === 'holdco' ? 'holdco-box' : lv.box.type === 'spv' ? 'spv-box' : ''}"><div class="struct-icon-box ${lv.box.type === 'top' ? 'gold' : lv.box.type === 'holdco' ? 'primary' : lv.box.type === 'spv' ? 'green' : 'neutral'}"><i data-lucide="${lv.box.icon}"></i></div><div class="struct-title">${lv.box.title}${lv.box.badge ? `<span class="struct-badge">${lv.box.badge}</span>` : ''}</div><div class="struct-desc">${lv.box.desc}</div></div></div>`;
+        } else if (lv.split) {
+          structHtml += `<div class="struct-level struct-split">`;
+          lv.boxes.forEach(b => {
+            structHtml += `<div class="struct-box ${b.type === 'spv' ? 'spv-box' : ''}"><div class="struct-icon-box ${b.type === 'spv' ? 'green' : 'neutral'}"><i data-lucide="${b.icon}"></i></div><div class="struct-title">${b.title}</div><div class="struct-desc">${b.desc}</div></div>`;
+          });
+          structHtml += `</div>`;
+        }
+        structHtml += `<div class="struct-arrow"><i data-lucide="arrow-down"></i></div>`;
+      });
+      // Remove trailing arrow
+      structHtml = structHtml.replace(/<div class="struct-arrow">.*?<\/div>$/, '');
+      setHTML('struct-diagram', structHtml);
+
+      // TIMELINE
+      const t = c.timeline;
+      setText('tl-tag', t.tag);
+      setText('tl-heading', t.heading);
+      setText('tl-desc', t.desc);
+      setHTML('tl-track', t.items.map(item => `<div class="timeline-item ${item.active ? 'active' : ''}"><div class="tl-dot ${item.active ? 'active-dot' : ''}"></div><div class="tl-content"><div class="tl-phase">${item.phase}</div><h4>${item.title}</h4><ul>${item.items.map(si => `<li>${si}</li>`).join('')}</ul></div></div>`).join(''));
+
+      // WHY INVEST
+      const w = c.why;
+      setText('why-tag', w.tag);
+      setText('why-heading', w.heading);
+      setText('why-desc', w.desc);
+      setHTML('why-grid', w.cards.map(card => `<div class="why-card"><div class="why-num">${card.num}</div><div class="why-icon-box"><i data-lucide="${card.icon}"></i></div><h3>${card.title}</h3><p>${card.text}</p></div>`).join(''));
+      setText('why-cta-heading', w.cta.heading);
+      setText('why-cta-text', w.cta.text);
+      setText('why-cta-btn', w.cta.btnText);
+      document.getElementById('why-cta-btn').href = w.cta.btnLink;
+
+      // TEAM
+      if (c.team && c.team.length > 0) {
+        setHTML('team-grid', c.team.map(m => `<div class="team-member-card"><div class="team-photo">${m.photo ? `<img src="${m.photo}" alt="${m.name}" />` : '<div class="team-photo-placeholder"><i data-lucide="user"></i></div>'}</div><div class="team-info"><h3>${m.name}</h3><div class="team-role">${m.role}</div><p>${m.bio}</p></div></div>`).join(''));
+      }
+
+      // CONTACT
+      const ct = c.contact;
+      setText('contact-tag', ct.tag);
+      setText('contact-heading', ct.heading);
+      setText('contact-desc', ct.desc);
+      setHTML('contact-items', ct.items.map(item => `<div class="contact-item"><div class="contact-icon-box"><i data-lucide="${item.icon}"></i></div><div><h4>${item.title}</h4><p>${item.text}</p></div></div>`).join(''));
+      setText('contact-disclaimer', ct.disclaimer);
+      setText('contact-form-title', ct.formTitle);
+      const subjSelect = document.getElementById('subject');
+      subjSelect.innerHTML = '<option value="">Select a topic</option>' + ct.formSubjects.map(s => `<option value="${s}">${s}</option>`).join('');
+
+      // FOOTER
+      const f = c.footer;
+      setText('footer-desc', f.desc);
+      setText('footer-reg', f.reg);
+      setHTML('footer-address', f.address);
+      setHTML('footer-phone-p', `<a href="tel:${f.phone}">${f.phone}</a>`);
+      setHTML('footer-email-p', `<a href="mailto:${f.email}">${f.email}</a>`);
+      setText('footer-postal-p', f.postal);
+      setText('footer-copyright', f.copyright);
+
+      // Re-init icons
+      lucide.createIcons();
+
+      // Re-init scroll animations
+      initScrollAnimations();
+    }
+
+    // ===== FORM =====
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('form-success').style.display = 'block';
+      e.target.reset();
+      setTimeout(() => { document.getElementById('form-success').style.display = 'none'; }, 6000);
+    }
+
+    // ===== SCROLL ANIMATIONS =====
+    function initScrollAnimations() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+      }, { threshold: 0.08 });
+
+      document.querySelectorAll('.about-card, .why-card, .project-detail, .contact-item, .fact-card, .timeline-item, .struct-box, .team-member-card').forEach(el => {
+        el.classList.add('fade-in');
+        observer.observe(el);
+      });
+    }
+
+    // ===== INIT ======
     lucide.createIcons();
 
     // Sticky navbar
@@ -627,23 +475,8 @@
       });
     });
 
-    // Form
-    function handleSubmit(e) {
-      e.preventDefault();
-      document.getElementById('form-success').style.display = 'block';
-      e.target.reset();
-      setTimeout(() => { document.getElementById('form-success').style.display = 'none'; }, 6000);
-    }
-
-    // Scroll animations
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-    }, { threshold: 0.08 });
-
-    document.querySelectorAll('.about-card, .why-card, .project-detail, .contact-item, .fact-card, .timeline-item, .struct-box').forEach(el => {
-      el.classList.add('fade-in');
-      observer.observe(el);
-    });
+    // Load content
+    loadContent();
   </script>
 
 </body>

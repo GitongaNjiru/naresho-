@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Naresho Solar Ranches</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="/logo.png" alt="Naresho Solar Ranches" id="nav-logo" />
+      </div>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li class="nav-close-item"><button class="nav-close" id="navClose" aria-label="Close menu">&times;</button></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#project">The Project</a></li>
+          <li><a href="/#why">Why Invest</a></li>
+          <li><a href="/#advisory">Advisory Team</a></li>
+          <li><a href="/#team">Our Team</a></li>
+          <li><a href="/blog">News</a></li>
+          <li><a href="/gallery">Gallery</a></li>
+          <li><a href="/#contact" class="nav-cta">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="nav-overlay" id="navOverlay"></div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== GALLERY HEADER ===== -->
+  <section class="gallery-page-header">
+    <div class="container">
+      <span class="section-tag">Photo Gallery</span>
+      <h1>Gallery</h1>
+      <p id="gallery-hero-desc">Events, site visits, and activities from Naresho Solar Ranches.</p>
+    </div>
+  </section>
+
+  <!-- ===== FILTER TABS ===== -->
+  <section class="gallery-filter-bar">
+    <div class="container">
+      <div class="filter-tabs" id="filterTabs">
+        <button class="filter-tab active" data-cat="All">All</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY GRID ===== -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-loading"><p>Loading gallery...</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i data-lucide="x"></i></button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous"><i data-lucide="chevron-left"></i></button>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next"><i data-lucide="chevron-right"></i></button>
+    <div class="lightbox-inner">
+      <img src="" alt="" id="lightboxImg" />
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+      <div class="lightbox-meta" id="lightboxMeta"></div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="/logo.png" alt="Naresho Solar Ranches" class="footer-logo" id="footer-logo" />
+          <p id="footer-desc"></p>
+          <p class="footer-reg" id="footer-reg"></p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#project">The Project</a></li>
+            <li><a href="/#why">Why Invest</a></li>
+            <li><a href="/#advisory">Advisory Team</a></li>
+            <li><a href="/#team">Our Team</a></li>
+            <li><a href="/blog">News</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p id="footer-address"></p>
+          <p id="footer-phone"></p>
+          <p id="footer-email"></p>
+          <p id="footer-postal"></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p id="footer-copyright"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    document.getElementById('navbar').classList.add('scrolled');
+    window.addEventListener('scroll', () => document.getElementById('navbar').classList.add('scrolled'));
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const navOverlay = document.getElementById('navOverlay');
+    const navClose = document.getElementById('navClose');
+    function openMenu() { navLinks.classList.add('open'); navOverlay.classList.add('active'); hamburger.classList.add('active'); document.body.style.overflow = 'hidden'; }
+    function closeMenu() { navLinks.classList.remove('open'); navOverlay.classList.remove('active'); hamburger.classList.remove('active'); document.body.style.overflow = ''; }
+    hamburger.addEventListener('click', openMenu);
+    navClose.addEventListener('click', closeMenu);
+    navOverlay.addEventListener('click', closeMenu);
+
+    // ===== LOAD SITE DATA (logo, footer) =====
+    async function loadSiteData() {
+      try {
+        const res = await fetch('/api/content');
+        const c = await res.json();
+        if (c.site && c.site.logo) {
+          document.getElementById('nav-logo').src = '/' + c.site.logo;
+          document.getElementById('footer-logo').src = '/' + c.site.logo;
+        }
+        if (c.site && c.site.title) {
+          document.title = 'Gallery — ' + c.site.title;
+          document.getElementById('gallery-hero-desc').textContent = 'Events, site visits, and activities from ' + c.site.title + '.';
+        }
+        const f = c.footer;
+        if (f) {
+          document.getElementById('footer-desc').textContent = f.desc || '';
+          document.getElementById('footer-reg').textContent = f.reg || '';
+          document.getElementById('footer-address').innerHTML = f.address || '';
+          document.getElementById('footer-phone').innerHTML = f.phone ? `<a href="tel:${f.phone}">${f.phone}</a>` : '';
+          document.getElementById('footer-email').innerHTML = f.email ? `<a href="mailto:${f.email}">${f.email}</a>` : '';
+          document.getElementById('footer-postal').textContent = f.postal || '';
+          document.getElementById('footer-copyright').textContent = f.copyright || '';
+        }
+      } catch (e) { console.warn('Could not load site data', e); }
+    }
+
+    // ===== GALLERY =====
+    let allImages = [], filtered = [], currentIndex = 0, activeCategory = 'All';
+
+    async function loadGallery() {
+      try {
+        const res = await fetch('/api/gallery');
+        allImages = await res.json();
+        if (!allImages.length) {
+          document.getElementById('galleryGrid').innerHTML = '<p style="text-align:center;color:#888;grid-column:1/-1;padding:60px 0;">No images in the gallery yet. Check back soon!</p>';
+          return;
+        }
+        const cats = ['All', ...new Set(allImages.map(i => i.category).filter(Boolean))];
+        const tabs = document.getElementById('filterTabs');
+        tabs.innerHTML = cats.map(c => `<button class="filter-tab ${c === 'All' ? 'active' : ''}" data-cat="${c}">${c}</button>`).join('');
+        tabs.querySelectorAll('.filter-tab').forEach(btn => {
+          btn.addEventListener('click', () => {
+            tabs.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeCategory = btn.dataset.cat;
+            applyFilter();
+          });
+        });
+        applyFilter();
+      } catch {
+        document.getElementById('galleryGrid').innerHTML = '<p style="text-align:center;color:#888;grid-column:1/-1;padding:60px 0;">Failed to load gallery.</p>';
+      }
+    }
+
+    function applyFilter() {
+      filtered = activeCategory === 'All' ? [...allImages] : allImages.filter(i => i.category === activeCategory);
+      renderGrid();
+    }
+
+    function renderGrid() {
+      const grid = document.getElementById('galleryGrid');
+      if (!filtered.length) {
+        grid.innerHTML = '<p style="text-align:center;color:#888;grid-column:1/-1;padding:60px 0;">No images in this category.</p>';
+        return;
+      }
+      grid.innerHTML = filtered.map((item, idx) => `
+        <div class="gallery-item fade-in" data-index="${idx}" onclick="openLightbox(${idx})" tabindex="0" role="button" aria-label="View image: ${escAttr(item.caption || item.category)}">
+          <img src="${item.image}" alt="${escAttr(item.caption || item.category)}" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-caption">${esc(item.caption)}</span>
+            <span class="gallery-item-cat">${esc(item.category)}</span>
+          </div>
+        </div>
+      `).join('');
+      grid.querySelectorAll('.gallery-item').forEach(el => {
+        el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click(); } });
+      });
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+      }, { threshold: 0.05 });
+      grid.querySelectorAll('.gallery-item').forEach(el => observer.observe(el));
+    }
+
+    function openLightbox(idx) {
+      currentIndex = idx; showLightboxImage();
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    function showLightboxImage() {
+      const item = filtered[currentIndex];
+      const img = document.getElementById('lightboxImg');
+      img.src = item.image; img.alt = item.caption || item.category;
+      document.getElementById('lightboxCaption').textContent = item.caption || '';
+      document.getElementById('lightboxMeta').textContent = [item.category, formatDate(item.date)].filter(Boolean).join(' · ');
+      document.getElementById('lightboxPrev').style.display = currentIndex > 0 ? 'flex' : 'none';
+      document.getElementById('lightboxNext').style.display = currentIndex < filtered.length - 1 ? 'flex' : 'none';
+    }
+
+    document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+    document.getElementById('lightboxPrev').addEventListener('click', () => { if (currentIndex > 0) { currentIndex--; showLightboxImage(); } });
+    document.getElementById('lightboxNext').addEventListener('click', () => { if (currentIndex < filtered.length - 1) { currentIndex++; showLightboxImage(); } });
+    document.getElementById('lightbox').addEventListener('click', e => { if (e.target === e.currentTarget) closeLightbox(); });
+    document.addEventListener('keydown', e => {
+      const lb = document.getElementById('lightbox');
+      if (!lb.classList.contains('active')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft' && currentIndex > 0) { currentIndex--; showLightboxImage(); }
+      if (e.key === 'ArrowRight' && currentIndex < filtered.length - 1) { currentIndex++; showLightboxImage(); }
+    });
+
+    function esc(str) { if (!str) return ''; return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+    function escAttr(str) { if (!str) return ''; return str.replace(/"/g,'&quot;'); }
+    function formatDate(d) { try { return new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }); } catch { return d || ''; } }
+
+    loadSiteData();
+    loadGallery();
+  </script>
+</body>
+</html>
