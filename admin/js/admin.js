@@ -910,7 +910,9 @@ async function saveGalleryEdit(id) {
 async function deleteGalleryItem(id) {
   if (!confirm('Delete this image from the gallery?')) return;
   try {
-    const res = await fetch('/api/admin/gallery/' + id, { method: 'DELETE' });
+    const delData = new FormData();
+    delData.append('_method', 'DELETE');
+    const res = await fetch('/api/admin/gallery/' + id, { method: 'POST', body: delData });
     if (res.ok) {
       galleryItems = galleryItems.filter(g => g.id !== id);
       renderGalleryAdminGrid();
@@ -1056,7 +1058,9 @@ function editBlogPost(id) {
 async function deleteBlogPost(id) {
   if (!confirm('Delete this article? This cannot be undone.')) return;
   try {
-    const res = await fetch(`/api/admin/blog/${id}`, { method: 'DELETE' });
+    const formData = new FormData();
+    formData.append('_method', 'DELETE');
+    const res = await fetch(`/api/admin/blog/${id}`, { method: 'POST', body: formData });
     if (res.ok) {
       await loadBlogPosts();
       showToast('Article deleted');

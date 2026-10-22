@@ -3,7 +3,7 @@ require_once __DIR__ . '/bootstrap.php';
 
 $method = $_SERVER['REQUEST_METHOD'];
 $uri = $_SERVER['REQUEST_URI'];
-preg_match('/\/api\/gallery\/?([^?]*)/', $uri, $matches);
+preg_match('/\/api\/(?:admin\/)?gallery\/?([^?\/]*)/', $uri, $matches);
 $id = trim($matches[1] ?? '', '/');
 
 $content = readContent();

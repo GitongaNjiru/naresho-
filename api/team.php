@@ -8,7 +8,7 @@ if ($method === 'POST' && isset($_POST['_method'])) {
     $method = strtoupper($_POST['_method']);
 }
 $uri = $_SERVER['REQUEST_URI'];
-preg_match('/\/api\/team\/?([^?]*)/', $uri, $matches);
+preg_match('/\/api\/(?:admin\/)?team\/?([^?\/]*)/', $uri, $matches);
 $id = trim($matches[1] ?? '', '/');
 
 $content = readContent();
